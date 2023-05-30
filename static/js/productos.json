@@ -1,0 +1,152 @@
+[
+    {
+        "id": "torta-01",
+        "titulo": "Torta Homero",
+        "imagen": "./image/tortaP/torta1.jpg",
+        "categoria": {
+            "nombre": "Tortas de pastillaje",
+            "id": "tortasPastillaje"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrtortaigo-02",
+        "titulo": "Torta Dinosaurio",
+        "imagen": "./image/tortaP/torta9.jpg",
+        "categoria": {
+            "nombre": "Tortas de pastillaje",
+            "id": "tortasPastillaje"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "torta-03",
+        "titulo": "Tortas de lineas",
+        "imagen": "./image/tortaP/torta10.jpg",
+        "categoria": {
+            "nombre": "Tortas de pastillaje",
+            "id": "tortasPastillaje"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "torta-04",
+        "titulo": "Torta Playa",
+        "imagen": "./image/tortaP/torta17.jpg",
+        "categoria": {
+            "nombre": "Tortas de pastillaje",
+            "id": "tortasPastillaje"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "torta-05",
+        "titulo": "Torta Mario",
+        "imagen": "./image/tortaP/torta6.jpg",
+        "categoria": {
+            "nombre": "Tortas de pastillaje",
+            "id": "tortasPastillaje"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "tortaCrema-01",
+        "titulo": "Torta emoji",
+        "imagen": "./image/tortaC/torta3.jpg",
+        "categoria": {
+            "nombre": "Tortas de crema",
+            "id": "tortasCremas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "tortaCrema-02",
+        "titulo": "Torta Mariposas",
+        "imagen": "./image/tortaC/torta11.jpg",
+        "categoria": {
+            "nombre": "Tortas de crema",
+            "id": "tortasCremas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "tortaCrema-03",
+        "titulo": "Primera comunión",
+        "imagen": "./image/tortaC/torta12.jpg",
+        "categoria": {
+            "nombre": "Tortas de crema",
+            "id": "tortasCremas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "tortaCrema-04",
+        "titulo": "Torta Rugrabs",
+        "imagen": "./image/tortaC/torta14.jpg",
+        "categoria": {
+            "nombre": "Tortas de crema",
+            "id": "tortasCremas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "tortaCrema-05",
+        "titulo": "Torta Unicornio",
+        "imagen": "./image/tortaC/torta13.jpg",
+        "categoria": {
+            "nombre": "Tortas de crema",
+            "id": "tortasCremas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cupcake-01",
+        "titulo": "Cupcakes Grado",
+        "imagen": "./image/cupcake/cup1.jpg",
+        "categoria": {
+            "nombre": "Cupcakes",
+            "id": "cupcakes"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cupcake-02",
+        "titulo": "Cupcakes Venon",
+        "imagen": "./image/cupcake/cup2.jpg",
+        "categoria": {
+            "nombre": "Cupcakes",
+            "id": "cupcakes"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "Cupcakes Naruto",
+        "imagen": "./image/cupcake/cup3.jpg",
+        "categoria": {
+            "nombre": "Cupcakes",
+            "id": "cupcakes"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Cupcakes Mexicanos",
+        "imagen": "./image/cupcake/cup4.jpg",
+        "categoria": {
+            "nombre": "Cupcakes",
+            "id": "cupcakes"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Cupcakes Unicornio",
+        "imagen": "./image/cupcake/cup5.jpg",
+        "categoria": {
+            "nombre": "Cupcakes",
+            "id": "cupcakes"
+        },
+        "precio": 1000
+    }
+]

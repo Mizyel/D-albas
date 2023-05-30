@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D' Albas</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="../library/node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../library/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../static/image/mision.jpg">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="../static/image/pexels.jpg" alt="" style="width: 7%; border-radius: 50%;">
+        <a href="../index.html" class="logo">D' Albas </a>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="../templates/nosotros.html">Nosotros</a>
+            <a href="../templates/productos.html">Productos</a>
+        </nav>
+
+        <!-- iconos -->
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <!-- El formulario de busqueda -->
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="buscar aquí...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <!-- aquí encontramos el formulario para iniciar sesión -->
+
+        <form action="" class="login-form">
+            <h3>INICIA SESIÓN AHORA</h3>
+            <input type="email" placeholder="Correo" class="box">
+            <input type="password" placeholder="contraseña" class="box">
+            <p>olvidó su contraseña<a href="#">haga clic aquí</a></p>
+            <p>no tengo una cuenta<a href="#">crear ahora</a></p>
+            <input type="submit" value="iniciar sesión" class="btn" onclick="InicioSecion()">
+        </form>
+        <!-- Aquí finaliza el formulario se iniciar sesión -->
+    </header>
+
+    <br>
+
+    <div class="text-center">
+        <h2 class="heading">Realizar <span id="span">Pedido</span></h2>
+    </div>
+
+    <!-- empieza el realizar pedido info cliente -->
+    <section class="todoPe">
+        <section>
+            <div class="row col-3 mt-5 col-md-9 offset-md-0">
+                <h3 class="text-center">Datos del Usuario</h3><br>
+                <form action="" class="factura" id="factura">
+                    <div style="margin: 10px 20px;">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="nombre" name="nombre" required><br><br>
+
+                        <label for="apellido">Apellidos</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="apellido" name="apellido" required><br><br>
+
+                        <label for="id">C.C o NIT</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="id" name="id" required><br><br>
+
+                        <label for="direccion">Dirección</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="direccion" name="direccion" required><br><br>
+
+                        <label for="tarjeta">Número Telefonico</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="tarjeta" name="tarjeta" required><br><br>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- aca termina el realizar pedido info cliente -->
+
+        <!-- aca empieza el realizar pedido info pedido -->
+        <section>
+            <div class="row col-3 mt-5 col-md-8 offset-md-4">
+                <h3 class="text-center">Cambios en el producto</h3><br>
+                <form action="" class="producto" id="producto">
+                    <div style="margin: 10px 20px;">
+
+                        <label for="peso">Peso en libras</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="peso" name="peso" required><br><br>
+
+                        <label for="sabor">Sabor</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="sabor" name="sabor" required><br><br>
+
+                        <label for="tema">Tematica del producto</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="tema" name="tema" required><br><br>
+
+                        <label for="detalles">Detalles</label><br>
+                        <input type="text" style="border-radius: 0.9rem;" id="detalles" name="detalles" required><br><br>
+                    
+                        <label for="fecha">Fecha de Expiración</label><br>
+                        <input type="date" style="border-radius: 0.9rem;" id="fecha" name="fecha" required><br><br>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+    <!-- aca termina el realizar pedido info pidido -->
+
+    <!-- tabla que muestra el valor de los productos pedidos -->
+    <section>
+        <div class="text-center">
+            <h1 class="span">Tu <span>Pedido</span></h1><br><br><br>
+        </div>
+        <div class="tabla" id="tabla">
+            <table class="table table-bordered border border-primary">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">nombre</th>
+                        <th scope="col" class="text-center">Celular</th>
+                        <th scope="col" class="text-center">Categoria del Producto</th>
+                        <th scope="col" class="text-center">Peso en Libras</th>
+                        <th scope="col" class="text-center">Fecha Entrega</th>
+                        <th scope="col" class="text-center">Nombre del Producto</th>
+                        <th scope="col" class="text-center">Subtotal</th>
+                        <th scope="col" class="text-center">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">María Toledo</td>
+                        <td class="text-center">444433355</td>
+                        <td class="text-center">Pastel en pastillaje</td>
+                        <td class="text-center">2 libras</td>
+                        <td class="text-center">24/06/2023</td>
+                        <td class="text-center">Pastel de Tik Tok</td>
+                        <td class="text-center">$23.000</td>
+                        <td class="text-center">$26.500</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <input type="submit" class="btn" value="Finalizar Pedido">
+        </div>
+    </section>
+    <!-- termina tabla que muestra el valor de los productos pedidos -->
+
+    <br>
+
+    <!-- footer de realizar pedido -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3 class="text-center">contactos</h3>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +3127768216 </a>
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +3178892763 </a>
+                    <a href="#" class="links"> <i class="fas fa-envelope"></i> dalbaspasteleria@gmail.com </a>
+                    <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Neiva - Huila </a>
+                </div>
+            </div>
+            <div class="creditos">Todos los derechos reservados <span>Wolsoft</span> | SENA </div>
+        </div>
+    </section>
+
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+    <script src="../library/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <script src="../library/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../library/node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../library/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../../static/image/mision.jpg">
+    <title>Mi Cuenta | D'Albas</title>
+</head>
+
+<body>
+    
+    <!-- header section starts  -->
+    <header class="header">
+        <img src="../../static/image/pexels.jpg" alt="" style="width: 7%; border-radius: 50%;">
+        <a href="#" class="logo">D' Albas </a>
+
+        <nav class="navbar" id="menu">
+            <a href="#" class="nav-link">Inicio</a><hr>
+            <a href="usuario/inicioUsuario.html" style="color: #d651c4;">Mi Cuenta</a><hr>
+            <a href="../../templates/usuario/index.html">Galeria</a><hr>
+        </nav>
+
+        <!-- iconos -->
+
+        <div class="icons">
+            <!-- <div class="fas fa-bars" id="menu-btn"></div> -->
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+
+        <!-- El formulario de busqueda -->
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="buscar aquí...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- Aquí el contenido de la cuenta de usuario -->
+    <div class="mt-4, cardUser" id="cardUsuario">
+        <div class="inicioU row">
+            <div class="col-3 col-sm-4 col-md-4 userPanel">
+                <div class="contarinerU container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <img alt='' src='https://cdn-icons-png.flaticon.com/512/456/456212.png' srcset=''
+                                class='avatar avatar-120 photo' height='125' width='140' loading='lazy' decoding='async'>
+                        </div>
+                        <div class="options col-md-6 m-4">
+                            <h3>User:</h3>
+                            <p>NameUsuario</p>
+                            <h3>Email:</h3><a class="email" href="#">correoDelUser@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="linkPag">
+                    <nav>
+                        <ul class="nav nav-pills flex-column ulLink" style="font-size: 20px;">
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="../../templates/usuario/index.html" >Ver Pasteles</a>
+                            </li>
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="javascript:void(0)" id="estadoPedido" onclick="verCategoria('estadoPedido')">Estado de Pedidos</a>
+                            </li>
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="javascript:void(0)" id="editarCuenta" onclick="verCategoria('editarCuenta')">Editar Cuenta</a>
+                            </li>
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="javascript:void(0)" id="cerrarSesion">Cerrar Sesion</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+<!-- Contenido de la Card -->
+
+            <div class="col-9 col-sm-8 col-md-8 ubicacionCard panel" >
+                <div class="item">
+                    <h1 class="text-center m-5" style="font-size: 35px;">¡Bienvenido a tú cuenta de usuario!</h1>
+                    <div class="container-fluid m-3">
+                        <div class="row mapaHorario">
+                            <div class="ubi" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="200" class="col-4 col-md-4 col-lg-4 col-xs-4"><br><br>
+                                <img src="https://cdn-icons-png.flaticon.com/512/807/807927.png" height="200px" alt="ubicacion"  >
+                                <h1>Horarios</h2>
+                                <p class="textDirecHora">Tercer Milenio, Calle 71 #3-a 40</p>
+                                <p class="textDirecHora">Lunes a Viernes de 8hs a 17hs</p>
+                                <p class="textDirecHora">Sabados de 10hs a 16hs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item estadoPedido" style="display: none;">
+                        <h1 class="text-center m-5" style="font-size: 35px;">No has realizado ningun pedido</h1>
+                </div>
+                
+                <div class="item editarCuenta" style="display: none;">
+                    <h1 class="text-center m-5" style="font-size: 26px;">Editar Cuenta</h1>
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" value="" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="" required>
+                    
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    
+                        <input type="submit" value="Guardar cambios">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <br><br><br><br><br>
+    <!-- Aquí inicia el footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box" id="footer">
+                <h3>Contactos</h3>
+                <a href="#" class="links"> 3185504427 <i class="fas fa-phone"></i></a>
+                <a href="#" class="links">3178860724 <i class="fas fa-phone"></i></a>
+                <a href="https://www.google.com/maps/place/Neiva,+Huila/@2.938648,-75.3003693,13z/data=!4m6!3m5!1s0x8e3b747c5a6b4009:0x69acf162bb25539a!8m2!3d2.9344837!4d-75.2809001!16zL20vMDNsejI5" class="links">Neiva - Huila <i class="fas fa-map-marker-alt"></i></a>
+                <a href="https://www.facebook.com/dalbaspasteleria" class="links">Facebook <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg></a>
+            </div>
+
+            <div class="creditos">Todos los derechos reservados<span> Wolsoft</span> | SENA </div>
+
+    </section>
+
+    <!-- aquí finzaliza el footer-->
+
+    
+
+    
+
+    <script src="../../library/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../../static/js/script.js"></script>
+    <script src="../../static/js/login.js"></script>
+    <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
