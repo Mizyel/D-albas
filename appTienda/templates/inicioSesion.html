@@ -1,0 +1,67 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "menu.html" %}
+{% endblock %}
+{% block contenido %}
+<section class="vh-100">
+    <div class="containerLogin">
+        <div class="login row">
+            <div class="col-lg-10 col-xl-11 mx-auto" >
+                <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+                    <div class=" card-img-left d-none d-md-flex">
+                        <img src="../../static/image/inicio.jpg" class="img-thumbnail" alt="...">
+                    </div>
+                    <div class="card-body p-4 p-sm-5">
+                        <h1 class="card-title text-center mb-5 fw-light">Iniciar sesión</h1>
+                        <form>
+            
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="myusername" required autofocus>
+                            <label  for="usuario">Nombre Usuario</label>
+                        </div>
+                
+                        <hr>
+                
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password">
+                            <label for="contraseña">Contraseña</label>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="d-grid mb-2">
+                            <button id="boton" class="registrar btnL btn-lg
+                             btn-primary btn-login fw-bold text-uppercase" 
+                             type="submit" onclick="login()">Iniciar sesión
+                            </button>
+                        </div>
+                
+                        <a class="mensaje d-block text-center mt-2 small" style="font-size: 1.2rem;" href="#">¿No tienes una cuenta? <br> Inicia sesión con las siguientes funciones:</a>
+                
+                        <hr class="my-4">
+                
+                        <div class="d-grid mb-2">
+                            <button class="btnL btn-lg btn-google btn-login fw-bold text-uppercase" type="submit">
+                            <i  class="fab fa-google me-2"><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-502910035%3A1685069321884795&authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dopera-gx%26q%3Dinicio%2Bde%2Bgmail%26sourceid%3Dopera%26ie%3DUTF-8%26oe%3DUTF-8&ec=GAlAAQ&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession"> 
+                                Sign up with Google</a></i>
+                            </button>
+                        </div>
+                
+                        <div class="d-grid mb-2">
+                            <button class="btnL btn-lg btn-facebook btn-login fw-bold text-uppercase" type="submit">
+                                <i class="fab fa-facebook-f me-2"><a href="https://www.facebook.com"> 
+                                    Sign up with Facebook<a/></i>
+                            </button>
+                        </div>
+                
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}

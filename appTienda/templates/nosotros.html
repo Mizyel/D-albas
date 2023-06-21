@@ -1,0 +1,94 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "menu.html" %}
+{% endblock %}
+{% block contenido %}
+    <!-- Aquí inicia la sesión de información -->
+    <section class="nosotros" id="nosotros" href="/nosotros/">
+        <h1 class="heading"> ¿Qué es <span>D' Albas</span>? </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="../static/image/mision.jpg" style="border-radius: 20%;">
+                <h3>Misión</h3>
+                <p>Llenar de felicidad cada fecha importante de nuestros clientes</p>
+            </div>
+
+            <div class="box">
+                <img src="../static/image/mision.jpg" style="border-radius: 20%;">
+                <h3>Visión</h3>
+                <p>crecer profesionalmente a tal punto de tener varios puntos ubicados en el país</p>
+            </div>
+
+            <div class="box">
+                <img src="../static/image/mision.jpg" alt="" style="border-radius: 20%;">
+                <h3>Nosotros</h3>
+                <p>Iniciamos en el 2014 con la idea de
+                    hacer tortas para las reuniones familiares, así
+                    poco a poco crecimos haciendo no solo horneando para nosotros,
+                    tambien para amigos y conocidos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartir de aquí inicia la sesión de información de empleados -->
+    <section class="nosotros" id="nosotros" href="/nosotros/">
+        <h1 class="heading">Nuestros<span>empleados</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="imagen col-md-4 rounded mx-auto d-block">
+                    <img class="grande" src="../static/image/dueña.jpeg" alt="">
+                </div>
+                    <h3>Alba Denis Morea</h3>
+                <p>Soy una mujer que le gusta hacer feliz a las personas.
+                     Mi especialidad es preparar y hornear productos.</p>
+                <p class="card-text"><small class="text-body-secondary">Propietaria.</small></p>
+            </div>
+
+            <div class="box">
+                <div class="imagen col-md-4 rounded mx-auto d-block">
+                    <img class="grande" src="../static/image/empleado.jpg" alt="">
+                </div>
+                    <h3>Ximena Rodriguez Morea</h3>
+                <p>Soy una persona muy creativa.
+                     Mi especilidad es el diseño de nuestros pedidos.</p>
+                <p class="card-text"><small class="text-body-secondary">Diseñadora.</small></p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Aquí finaliza la sesión de información -->
+
+    <!-- Apartir de aquí inicia la sesión de información de empleados -->
+    <section class="nosotros" id="nosotros" href="/nosotros/">
+        <h1 class="heading">Nuestros<span>empleados</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="imagen col-md-4 rounded mx-auto d-block">
+                    <img class="grande" src="../static/image/dueña.jpeg" alt="">
+                </div>
+                    <h3>Alba Denis Morea</h3>
+                <p>Soy una mujer que le gusta hacer feliz a las personas.
+                     Mi especialidad es preparar y hornear productos.</p>
+                <p class="card-text"><small class="text-body-secondary">Propietaria.</small></p>
+            </div>
+
+            <div class="box">
+                <div class="imagen col-md-4 rounded mx-auto d-block">
+                    <img class="grande" src="../static/image/empleado.jpg" alt="">
+                </div>
+                    <h3>Ximena Rodriguez Morea</h3>
+                <p>Soy una persona muy creativa.
+                     Mi especilidad es el diseño de nuestros pedidos.</p>
+                <p class="card-text"><small class="text-body-secondary">Diseñadora.</small></p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Aquí finaliza la sesión de información -->
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}

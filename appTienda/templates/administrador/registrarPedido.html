@@ -1,0 +1,89 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "administrador/menu.html" %}
+{% endblock %}
+{% block contenido %}
+<div class="wrapper">
+    <header class="header-mobile">
+        <h1 class="logo">Agregar Productos</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+            <h1 class="logo">Registro de Pedido</h1>
+        </header>
+        <nav>
+
+            <div>
+                <button ><a href="admin.html">volver</a></button>
+            </div>
+
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2023 WOLSOFT</p>
+        </footer>
+    </aside>
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">REGISTRAR PEDIDO</h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+            <div class="container h-100 frmPedido">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-10 col-md-8 col-lg-6 col-xl-5">
+                        <div class="border shadow-2-strong">
+                            <div class="bg-white p-5 text-center">
+                                <!-- <h3 class="text-center bg-danger text-white">REGISTRAR PEDIDO</h3> -->
+                                <form id="frmPedido" action="" method="post" enctype="multipart/form-data"
+                                    class="was-validated">
+
+                                    <div class="form-floating mb-4">
+                                        <label for="txtNomCli">Nombre del cliente</label>
+                                        <input type="" name="txtNomCli" id="txtNomCli" class="form-control" required
+                                            placeholder="Nombre del cliente" value="">
+                                    </div>
+
+                                    <div class="form-floating mb-4">
+                                        <label for="txtDescripcion">descripcion del pedido</label>
+                                        <input type="" name="txtDescripcion" id="txtDescripcion"
+                                            class="form-control" required placeholder="descripcion del pedido"
+                                            value="">
+                                    </div>
+
+                                    <div class="form-floating mb-4">
+                                        <label for="txtPrecio">Precio del pedido</label>
+                                        <input type="number" name="txtPrecio" id="txtPrecio" class="form-control"
+                                            required placeholder="Precio del pedido" value="">
+                                    </div>
+
+                                    <div class="form-floating mb-4">
+                                        <label for="fileFoto">Cargar foto (jpg) del pedido: </label>
+                                        <input type="file" name="fileFoto" id="fileFoto" class="form-control"
+                                            accept=".jpg" accept=".jpg" placeholder="Seleccione Foto">
+                                    </div>
+
+                                    <div class="text-center">
+                                        <img id="imagenProducto" src="" alt="" width="100" height="100">
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <a href="">
+                                            <button type="button" class="btn btn-warning">Agregar Pedido</button>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}

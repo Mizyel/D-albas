@@ -1,0 +1,54 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "menu.html" %}
+{% endblock %}
+{% block contenido %}
+    <!-- Aquí inicia el slaider -->
+    <div class="container-fluid">
+        <div class="carrusel row">
+          <div class="carrusel row" style="height: 800px; width:100%;">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="static/image/portada.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="static/image/portada1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="static/image/portada2.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <h1 class="titleInicial">Dónde encontrarnos <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/></svg>
+    </h1>
+
+    <section class="maps">
+        <div class="col-4 col-md-8 col-lg-8 col-xs-8">
+          <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.2809298313122!2d-75.28993330637033!3d2.965854298647837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b75a8c0ada021%3A0xeaaea5c754c4a614!2sCl.%2071%20%233%20a%2040%2C%20Neiva%2C%20Huila!5e0!3m2!1ses!2sco!4v1684361720359!5m2!1ses!2sco"
+            width="100%" height="450px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+    </section>
+    <!-- Aquí finaliza el slaider -->
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}

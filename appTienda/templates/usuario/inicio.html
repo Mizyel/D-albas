@@ -1,0 +1,88 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "menu.html" %}
+{% endblock %}
+{% block contenido %}
+      <!-- Aquí el contenido de la cuenta de usuario -->
+      <div class="mt-4, cardUser" id="cardUsuario">
+        <div class="inicioU row">
+            <div class="col-3 col-sm-4 col-md-4 userPanel">
+                <div class="contarinerU container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <img alt='' src='https://cdn-icons-png.flaticon.com/512/456/456212.png' srcset=''
+                                class='avatar avatar-120 photo' height='125' width='140' loading='lazy' decoding='async'>
+                        </div>
+                        <div class="options col-md-6 m-4">
+                            <h3>User:</h3>
+                            <p>NameUsuario</p>
+                            <h3>Email:</h3><a class="email" href="#">correoDelUser@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="linkPag">
+                    <nav>
+                        <ul class="nav nav-pills flex-column ulLink" style="font-size: 20px;">
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="../../templates/usuario/index.html" >Ver Pasteles</a>
+                            </li>
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="" id="estadoPedido" onclick="verCategoria('estadoPedido')">Estado de Pedidos</a>
+                            </li>
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="" id="editarCuenta" onclick="verCategoria('editarCuenta')">Editar Cuenta</a>
+                            </li>
+                            <li class="nav-item liLink">
+                                <a class="link-glow nav-link" href="../../index.html" id="cerrarSesion">Cerrar Sesion</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+<!-- Contenido de la Card -->
+
+            <div class="col-9 col-sm-8 col-md-8 ubicacionCard panel" >
+                <div class="item">
+                    <h1 class="text-center m-5" style="font-size: 35px;">¡Bienvenido a tú cuenta de usuario!</h1>
+                    <div class="container-fluid m-3">
+                        <div class="row mapaHorario">
+                            <div class="ubi" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="200" class="col-4 col-md-4 col-lg-4 col-xs-4"><br><br>
+                                <img src="https://cdn-icons-png.flaticon.com/512/807/807927.png" height="200px" alt="ubicacion"  >
+                                <h1>Horarios</h2>
+                                <p class="textDirecHora">Tercer Milenio, Calle 71 #3-a 40</p>
+                                <p class="textDirecHora">Lunes a Viernes de 8hs a 17hs</p>
+                                <p class="textDirecHora">Sabados de 10hs a 16hs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item estadoPedido" style="display: none;">
+                        <h1 class="text-center m-5" style="font-size: 35px;">No has realizado ningun pedido</h1>
+                </div>
+                
+                <div class="item editarCuenta" style="display: none;">
+                    <h1 class="text-center m-5" style="font-size: 26px;">Editar Cuenta</h1>
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" value="" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="" required>
+                    
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    
+                        <input type="submit" value="Guardar cambios">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}

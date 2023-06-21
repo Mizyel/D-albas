@@ -1,0 +1,102 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "administrador/menu.html" %}
+{% endblock %}
+{% block contenido %}
+<div class="mt-4, cardAdmin" id="cardAdmin">
+    <div class="inicioA row">
+        <div class="col-3 col-sm-4 col-md-4 userPanel">
+            <div class="linkPag">
+                <nav>
+                    <br><br><br>
+                    <br><br><br>
+                    <br><br><br>
+                    <ul class="nav nav-pills flex-column ulLink" style="font-size: 20px;">
+                        <li class="nav-item liLink">
+                            <a class="link-glow nav-link" id="RegistroPedidos" href="registrarPe.html">Registrar Pedido</a>
+                        </li>
+                        <li class="nav-item liLink">
+                            <a class="link-glow nav-link" href="verPedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item liLink">
+                            <a class="link-glow nav-link" href="javascript:void(0)" id="pedidos"
+                                onclick="verCategoria('pedidos')">Estado de los Pedidos</a>
+                        </li>
+                        <li class="nav-item liLink">
+                            <a class="link-glow nav-link" href="javascript:void(0)" id="editarCuenta"
+                                onclick="verCategoria('editarCuenta')">Editar Cuenta</a>
+                        </li>
+                        <li class="nav-item liLink">
+                            <a class="link-glow nav-link" href="javascript:void(0)" id="cerrarSesion">Cerrar
+                                Sesion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Contenido de la Card -->
+
+        <div class="col-9 col-sm-8 col-md-8 ubicacionCard panel">
+            <div class="item">
+                <br><br>
+                <h1 class="text-center m-5" style="font-size: 35px;">¡Bienvenido a tú cuenta de Administrador!</h1>
+                <br><br>
+                <div class="container-fluid m-3">
+                    <div class="row mapaHorario">
+                        <div class="ubi" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="200" class="col-4 col-md-4 col-lg-4 col-xs-4"><br><br>
+                            <div>
+                                <img alt='' src='https://cdn-icons-png.flaticon.com/512/456/456212.png' srcset=''
+                                    class='avatar avatar-120 photo' height='125' width='140' loading='lazy'
+                                    decoding='async'>
+                            </div>
+                            <div class="options col-md-15 m-5">
+                                <h3>User:</h3>
+                                <p>NameUsuario</p>
+                                <h3>Email:</h3><a class="email" href="#">correoDelUser@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item editarCuenta" style="display: none;">
+                <h1 class="text-center m-5" style="font-size: 26px;">Editar Cuenta</h1>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="" required>
+
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+
+                    <input type="submit" value="Guardar cambios">
+                </form>
+            </div>
+
+            <div class="item pedidos" style="display: none;">
+                <form class="tabla" id="tabla">
+                    <table class="table table-bordered border border-primary">
+                        <h1 class="text-center m-5" style="font-size: 26px;">Estados de los pedidos</h1>
+                        <div class="item pedidos" style="display: none;">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">nombre del cliente</th>
+                                    <th scope="col" class="text-center">nombre del producto</th>
+                                    <th scope="col" class="text-center">estado del pedido</th> <!-- en el "estado del pedido" 
+                                        mostrara automaticamente los cuatro estados que tiene el pedido hecho -->
+                                </tr>
+                            </thead>
+                        </div>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "administrador/menu.html" %}
+{% endblock %}
+{% block contenido %}
+<div class="wrapper">
+    <header class="header-mobile">
+        <h1 class="logo">Tus Productos</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+            <h1 class="logo">Agregar Productos</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <button id="todos" class="boton-menu boton-categoria active"><i
+                            class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                </li>
+                <li>
+                    <button id="tortasPastillaje" class="boton-menu boton-categoria"><i
+                            class="bi bi-hand-index-thumb"></i> Tortas de pastillaje</button>
+                </li>
+                <li>
+                    <button id="tortasCremas" class="boton-menu boton-categoria"><i
+                            class="bi bi-hand-index-thumb"></i>Tortas de crema</button>
+                </li>
+                <li>
+                    <button id="cupcakes" class="boton-menu boton-categoria"><i
+                            class="bi bi-hand-index-thumb"></i>Cupcakes</button>
+                </li>
+                <li>
+                    <button><a href="botonAgregar.html">Agregar Productos</a></button>
+                </li>
+                <li>
+
+                    <button><a href="admin.html">volver</a></button>
+
+                </li>
+            </ul>
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2023 WOLSOFT</p>
+        </footer>
+    </aside>
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS -->
+        </div>
+    </main>
+</div>
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}

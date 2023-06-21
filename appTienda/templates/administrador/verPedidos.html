@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+{% block menu %}
+    {% include "administrador/menu.html" %}
+{% endblock %}
+{% block contenido %}
+    <!-- tabla que muestra el valor de los productos pedidos -->
+    <section>
+        <div class="text-center">
+            <h1 class="span">Lista de <span>Pedido</span></h1><br><br><br>
+        </div>
+        <div class="d-flex justify-content-center tabla" id="tabla">
+            <table class="table table-bordered border border-primary">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">nombre</th>
+                        <th scope="col" class="text-center">Celular</th>
+                        <th scope="col" class="text-center">Categoria del Producto</th>
+                        <th scope="col" class="text-center">Peso en Libras</th>
+                        <th scope="col" class="text-center">Fecha Entrega</th>
+                        <th scope="col" class="text-center">Nombre del Producto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">rr</td>
+                        <td class="text-center">rr</td>
+                        <td class="text-center">rr</td>
+                        <td class="text-center">rr</td>
+                        <td class="text-center">rr</td>
+                        <td class="text-center">rr</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <!-- <div class="d-flex justify-content-center">
+            <input type="submit" class="btn" value="Finalizar Pedido">
+        </div> -->
+    </section>
+    <!-- termina tabla que muestra el valor de los productos pedidos -->
+{% endblock %}
+{% block pie_pagina %}
+    {% include "footer.html" %}
+{% endblock %}
